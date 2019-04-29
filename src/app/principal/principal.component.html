@@ -1,0 +1,72 @@
+<div class="card">
+	<div class="score">
+		<div class="row">
+			<div class="col" id="s1">
+				<i class="fas fa-balance-scale"></i>
+				<div class="progress">
+	  				<div class="progress-bar" role="progressbar" [style.width.%]="etica" [attr.aria-valuenow]="etica" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<p>Ética</p>
+			</div>
+			<div class="col" id="s2">
+				<i class="fas fa-mug-hot"></i>
+				<div class="progress">
+	  				<div class="progress-bar" role="progressbar" [style.width.%]="energia" [attr.aria-valuenow]="energia" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<p>Energia</p>
+			</div>
+			<div class="col" id="s3">
+				<i class="fas fa-database"></i>
+				<div class="progress">
+	  				<div class="progress-bar" role="progressbar" [style.width.%]="dados" [attr.aria-valuenow]="dados" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<p>Dados</p>
+			</div>
+			<div class="col" id="s4">
+				<i class="fas fa-book-reader"></i>
+				<div class="progress">
+	  				<div class="progress-bar" role="progressbar" [style.width.%]="conhecimento" [attr.aria-valuenow]="conhecimento" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<p>Conhecimento</p>
+			</div>
+			<div class="col" id="s5">
+				<i class="fas fa-dollar-sign"></i>
+				<div class="progress">
+	  				<div class="progress-bar" role="progressbar" [style.width.%]="gastos" [attr.aria-valuenow]="gastos" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<p>Dinheiro</p>
+			</div>
+		</div>
+	</div>
+	<div class="premissa">
+		{{p.value.premissa}}
+	</div>
+	<div class="personagem">
+		<img [src]="p.value.path">
+		<div class="nome">
+			{{p.value.personagem}}
+		</div>
+	</div>
+
+	<div class="opcoes">
+		<div class="row">
+			<div class="col">
+				<a  (click)="clicou(1)" id="a">{{p.value.opcoes.op1.t}}</a>
+			</div>
+			<div class="col">
+				<a (click)="clicou(2)" id="a">{{p.value.opcoes.op2.t}}</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="foot">
+	<div class="row">
+		<div class="col">
+			<a [routerLink]="['']" style="float: right;"><i class="fas fa-power-off"></i></a>
+		</div>
+		<div class="col">
+			<a [routerLink]="['/tuto']" style="float: left;"><i class="fas fa-question"></i></a>
+		</div>
+	</div>
+</div>

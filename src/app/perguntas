@@ -1,0 +1,96 @@
+//adicionar no codigo
+se o usuario responder as duas questões como "certas", vai pro final 2
+se ele não duvidar do consultor, vai pro final 1
+
+//adicionadas ao fluxo normal
+“Sua filha é linda…” (personagem = consultor; opções = “genética do pai/vem tranquilo, sem afobação”; resultado = --/e-10;c-10;g-5)
+
+“Oi pai! Estou indo para a faculdade.”(personagem= Filha; opções” Tudo bem, vá com cuidado/Eu te levo”; resultado= g-5/c-5)
+
+“Seu celular não para de tocar” (personagem = Filha ; opções”Atender/Tô com preguiça; resultado = c-5/c+10)
+
+“Caso queira rastrear os IP’s da rede, digite o comando correto” (personagem=terminal ; opções”arp -a/ ipconfig renew”; resultado= c-5;s-10)
+
+"Poderia devolver o meu pen-drive?" (personagem = empregadora; opcoes "Esta ai/Acho que perdi..."; resultado = d+5/g-10,d-10)
+
+"Acho que o que você está investigando é mais complexo" (personagem= delagada; opcoes "Acho que não/Interessante", resultado = d-5;s+5,e-5)
+
+FLAG -> O consultor sabe tanto sobre invasões a sistemas…” (personagem=informante; opções “É a formação dele/ Hmm...”; resultado= c-5; d-10/c-10; s+10)
+
+FLAG -> “Ouvi dizer que o seu consultor não é muito confiável.” (personagem=informante; opções “ Explana/ Não me interessa”; resultado= c-5;/d-10) 
+
+FLAG -> "Alguns relatórios apontam que tem algum meliante em sua organização." (Personagem= Agente da ABIN; Opções: Não é possível/Vou rever os relatórios; resultado= --/c-10;s+5;g-5) 
+
+Verifique a política de segurança da empresa, principalmente de autenticação (Personagem: Consultor; Opções: OK/Não é necessário;  resultado= s+10;c-10/e-5;c+5)
+
+A arquitetura de firewall é Screened Host Architeture (personagem: Auditora; opcoes Nem sei o que é isso/O bastiom host foi comprometido...; resultado = s-5;d-5/s+5;c-5)
+
+Já descobriu o tipo de ataque? (personagem: auditora; opcoes: passivo/ativo; resultado )
+
+Verificou o atual hash dos arquivos? (personagem: auditora; )
+
+Acho que o sistema pegou vírus... (personagem: empregadora; opcoes: concordo/acho que não; d-5;g-5/c-5;s+5)
+
+Acha que é um spyware ou um worm? (personagem: auditora; opcoes spyware/worm; c-5,s-5,d-5/c+5;s+5)
+
+Saiu uma nova listas de exploits (personagem: consultor; opcoes não preciso/já vi; g-5;d-5;s-10/s+10;c-5;d+5)
+
+Já verificou a existência de backdoors? (personagem: auditora; opcoes: sim/não; c+5;s+5/c-5;g-5)
+
+Tome aqui um café para te ajudar :) (personagem: filha; opcoes: obrigado/não quero; c+15/--)
+
+Está aqui um bônus pelo seu trabalho :) (personagen: empregadora; opcoes: dê aos pobres/obrigado; --/g+15)
+
+Acho que o problema é na confidencialidade (personagem: empregadora; opcoes: ava, é mermo?/não sei; )
+//final 1
+“Acabo de identificar algo suspeita na rede” (personagem= auditor ; opções "Tô baixando torrent/Vou ver”; resultado= d-10;g-10/c-10)
+
+"Analise a rede" (personagem= cmd; opções "netsh wlan show wlanrepor/ipconfig"; resultado= c-5;d+5;s+5/ d-10;s-5)
+
+“Seu sistema foi invadido” (personagem=cmd; opções "Que?/E o Baibu?”;)
+
+“A sua filha foi sequestrada, portanto faça tudo o que mandar caso o contrário ela sofrerá as consequências”(personagem= Cracker; opções "Você está blefando/Prove!”)
+
+"Chegou um e-mail" (personagem= sistema;opcoes "É a minha filha!/POLICIA"; )
+
+"Você tem uma hora para transmitir 2 milhões de reais, se não sua filha morre" (personagem= sistema;opcoes "É a minha filha!/POLICIA";)
+
+"Não envolva a Polícia se quiser ver sua filha" (personagem= sistema;opcoes "É a minha filha!/POLICIA";)
+
+“Seu tempo está se esgotando”(personagem=cracker ; opções” Acabei de transferir o dinheiro/ Mas que merda”; resultado=g-40)
+
+“Os dados foram corrompidos e sua filha foi morta.” (personagem=sistema ; opções "droga.../droga...";)
+
+//final 2 -- p/
+
+//p mudar
+ 
+“Preciso ir agora, você tem visitas”( personagem=informante; opções “Visita?/ Não se vá...”; resultado= s+5;/e-10)
+
+Os relatórios apontam que o suspeito tinha um grande conhecimento sobre o funcionamento do sistema Tedesco. (Personagem: Agente da ABIN; Opções: Um funcionário…?/ Ele deve ser muito inteligente; resultado= s+10/s-5)
+
+“Ainda não sabemos ao certo, verifique os relatórios de acesso ao sistema do último mês e depois conversamos(Personagem: Agente da ABIN; Opções: Tudo eu…/ OK; resultado= e-10;c-5; d-10/c-5; s+10)
+
+Aguardando comando( Personagem: Terminal; Opções: last -w/ last -x shutdown; resultado= s+10/s-10, d-5)
+
+Quais são as pessoas que mais acessaram? Quem?(Personagem: Agente da ABIN; Opções: O consultor e a empregadora/ O consultor e um funcionário demitido; resultado= e-10;c-5/c-5; s+10)
+
+Uma demissão poderia se tornar uma motivação, precisamos descobrir mais sobre isso.(Personagem: Agente da ABIN; Opções: Você tem razão/Eu suspeito mais do consultor; resultado= c-10/ s+10)
+
+Acha que foi o consultor? (Personagem: Agente da ABIN; Opções: É suspeito ele ser tão prestativo/ Não;  resultado= s+10;c-5/s-10)
+
+Acha que foi a empregadora?(Personagem: Agente da ABIN; Opções:Impossível/ Alguém pode ter usado o ID dela; resultado= s-10;c-5/s+10; c-10)
+
+Você pode ler a política de segurança no site da empresa (Personagem:Empregadora; Opções: Obrigado/ Vou ver depois;  resultado= s+10/s-5; d-10)
+
+Algo mais?(Personagem: Empregadora; Opções: Não, tudo bem/ Eu tenho uma pergunta;  resultado= s+10;c-5/s-10)
+
+Pode perguntar(Personagem:Empregadora; Opções: Você acessava o sistema bancário com que frequência?/ A senhora sabe acessar o sistema de seu banco?;  resultado= s+10;c-5/s-10)
+
+Eu só acessei uma vez, depois cedi meu ID para o Consultor. Por que ?(Personagem: Empregadora; Opções: Suspeito de algo/ Nada demais...;  resultado= e+10, s+10/s+10; e-5; d-5)
+
+Você está indo bem, no início não botava muita fé em seu trabalho(Personagem: informante; Opções: Pq diz isso? Pareço tão burro assim?;  resultado= s+5/c-5)
+
+Sim, você estava quase caindo no papo do falso bom mocinho. Se eu fosse você andava logo com isso(Personagem: Informante; Opções: OK/ tá..;  resultado= s+10;c-5/s+10; c-5)
+
+Recebi seus relatórios, ao que tudo indica o culpado realmente é o consultor. Parabéns pelo trabalho. ( Personagem: Agente ABIN; Opções: Obrigado/ Sempre a disposição da nação, resultado= VOCÊ VENCEU)
