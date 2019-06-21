@@ -42,6 +42,7 @@ Tome aqui um café para te ajudar :) (personagem: filha; opcoes: obrigado/não q
 Está aqui um bônus pelo seu trabalho :) (personagen: empregadora; opcoes: dê aos pobres/obrigado; --/g+15)
 
 Acho que o problema é na confidencialidade (personagem: empregadora; opcoes: ava, é mermo?/não sei; )
+
 //final 1
 “Acabo de identificar algo suspeita na rede” (personagem= auditor ; opções "Tô baixando torrent/Vou ver”; resultado= d-10;g-10/c-10)
 
@@ -61,23 +62,24 @@ Acho que o problema é na confidencialidade (personagem: empregadora; opcoes: av
 
 “Os dados foram corrompidos e sua filha foi morta.” (personagem=sistema ; opções "droga.../droga...";)
 
-//final 2 -- p/
+//final 2 
+
+
 
 //p mudar
- 
-“Preciso ir agora, você tem visitas”( personagem=informante; opções “Visita?/ Não se vá...”; resultado= s+5;/e-10)
+“Preciso ir agora, você tem visitas” (personagem=informante; opções “Visita?/ Não se vá...”; resultado= s+5;/e-10)
 
-Os relatórios apontam que o suspeito tinha um grande conhecimento sobre o funcionamento do sistema Tedesco. (Personagem: Agente da ABIN; Opções: Um funcionário…?/ Ele deve ser muito inteligente; resultado= s+10/s-5)
+Os relatórios apontam que o suspeito tinha um grande conhecimento sobre o funcionamento do sistema Tedesco. (Personagem: Agente da ABIN; Opções: Um funcionário…?/ Ele deve ser muito inteligente; resultado= ---)
 
-“Ainda não sabemos ao certo, verifique os relatórios de acesso ao sistema do último mês e depois conversamos(Personagem: Agente da ABIN; Opções: Tudo eu…/ OK; resultado= e-10;c-5; d-10/c-5; s+10)
+“Ainda não sabemos quem é. Verifique os relatórios de acesso ao sistema do último mês e depois conversamos(Personagem: Agente da ABIN; Opções: To com preguiça/OK; resultado= e-5;c+5;d-10/c-5;s+10)
 
-Aguardando comando( Personagem: Terminal; Opções: last -w/ last -x shutdown; resultado= s+10/s-10, d-5)
+Aguardando comando... (Personagem: cmd; Opções: last -w/last -x shutdown; resultado= s+10/s-10, d-5)
 
-Quais são as pessoas que mais acessaram? Quem?(Personagem: Agente da ABIN; Opções: O consultor e a empregadora/ O consultor e um funcionário demitido; resultado= e-10;c-5/c-5; s+10)
+Quais são as pessoas que mais acessaram? Quem? (Personagem: Agente da ABIN; Opções: O consultor e a empregadora/ O consultor e um funcionário demitido; resultado= e-10;c-5/c-5; s+10)
 
-Uma demissão poderia se tornar uma motivação, precisamos descobrir mais sobre isso.(Personagem: Agente da ABIN; Opções: Você tem razão/Eu suspeito mais do consultor; resultado= c-10/ s+10)
+Uma demissão poderia se tornar uma motivação, precisamos descobrir mais sobre isso. (Personagem: Agente da ABIN; Opções: Você tem razão/Eu suspeito mais do consultor; resultado= c-10/ s+10)
 
-Acha que foi o consultor? (Personagem: Agente da ABIN; Opções: É suspeito ele ser tão prestativo/ Não;  resultado= s+10;c-5/s-10)
+Acha que foi o consultor? (Personagem: Agente da ABIN; Opções: É suspeito ele ser tão prestativo/ Não; resultado= s+10;c-5/s-10)
 
 Acha que foi a empregadora?(Personagem: Agente da ABIN; Opções:Impossível/ Alguém pode ter usado o ID dela; resultado= s-10;c-5/s+10; c-10)
 
@@ -85,7 +87,7 @@ Você pode ler a política de segurança no site da empresa (Personagem:Empregad
 
 Algo mais?(Personagem: Empregadora; Opções: Não, tudo bem/ Eu tenho uma pergunta;  resultado= s+10;c-5/s-10)
 
-Pode perguntar(Personagem:Empregadora; Opções: Você acessava o sistema bancário com que frequência?/ A senhora sabe acessar o sistema de seu banco?;  resultado= s+10;c-5/s-10)
+Pode perguntar (Personagem:Empregadora; Opções: Você acessava o sistema bancário com que frequência?/ A senhora sabe acessar o sistema de seu banco?;  resultado= s+10;c-5/s-10)
 
 Eu só acessei uma vez, depois cedi meu ID para o Consultor. Por que ?(Personagem: Empregadora; Opções: Suspeito de algo/ Nada demais...;  resultado= e+10, s+10/s+10; e-5; d-5)
 
@@ -93,4 +95,4 @@ Você está indo bem, no início não botava muita fé em seu trabalho(Personage
 
 Sim, você estava quase caindo no papo do falso bom mocinho. Se eu fosse você andava logo com isso(Personagem: Informante; Opções: OK/ tá..;  resultado= s+10;c-5/s+10; c-5)
 
-Recebi seus relatórios, ao que tudo indica o culpado realmente é o consultor. Parabéns pelo trabalho. ( Personagem: Agente ABIN; Opções: Obrigado/ Sempre a disposição da nação, resultado= VOCÊ VENCEU)
+Recebi seus relatórios, ao que tudo indica o culpado realmente é o consultor. Parabéns pelo trabalho. ( Personagem: Agente ABIN; Opções: Obrigado/Sempre a disposição da nação, resultado= VOCÊ VENCEU)
